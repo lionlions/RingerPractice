@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "392082046616",
+    "firebase_url": "https://ringerpractice.firebaseio.com",
+    "project_id": "ringerpractice",
+    "storage_bucket": "ringerpractice.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:392082046616:android:386c46e1b2b24ad9321aed",
+        "android_client_info": {
+          "package_name": "com.cindy.ringerpractice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "392082046616-bjs5100jdatpjh2goanifqo18b47d875.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cindy.ringerpractice",
+            "certificate_hash": "82cc6292915da3039611b566d6b7bd73cf50bf9b"
+          }
+        },
+        {
+          "client_id": "392082046616-41nioihn7sk15vbe0tvtp9v3psi4501p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwfddl5GTUuWy--CFuDvlAOq0_v9YaiRc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "392082046616-41nioihn7sk15vbe0tvtp9v3psi4501p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
