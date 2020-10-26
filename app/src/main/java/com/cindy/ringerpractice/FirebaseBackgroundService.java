@@ -15,10 +15,5 @@ public class FirebaseBackgroundService extends WakefulBroadcastReceiver {
     public void onReceive(Context context, Intent intent) {
         if(BuildConfig.DEBUG) Log.v(TAG, "===== onReceive =====");
 
-        Intent newIntent = new Intent();
-        newIntent.setClass(context, InCallActivity.class);
-        newIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        context.startActivity(newIntent);
-
     }
 }

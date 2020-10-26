@@ -13,6 +13,7 @@ import com.google.firebase.messaging.RemoteMessage;
 public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
     private String TAG = getClass().getSimpleName();
+    private boolean alreadyGetMessage = false;
 
     public MyFirebaseMessagingService() {
     }
@@ -29,6 +30,11 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         super.onMessageReceived(remoteMessage);
         if(BuildConfig.DEBUG) Log.v(TAG, "===== onMessageReceived =====");
 
+        if(!alreadyGetMessage){
+            alreadyGetMessage = true;
+            openActivity();
+        }
+
 
     }
 
@@ -37,5 +43,23 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         super.handleIntent(intent);
         if(BuildConfig.DEBUG) Log.v(TAG, "===== handleIntent =====");
 
+        if(!alreadyGetMessage){
+            alreadyGetMessage = true;
+            openActivity();
+        }else{
+            alreadyGetMessage = false;
+        }
+
     }
+
+    private void openActivity(){
+        if(BuildConfig.DEBUG) Log.v(TAG, "===== openActivity =====");
+
+        Intent newIntent = new Intent();
+        newIntent.setClass(this, InCallActivity.class);
+        newIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(newIntent);
+
+    }
+
 }
