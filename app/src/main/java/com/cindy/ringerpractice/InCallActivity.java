@@ -16,9 +16,8 @@ public class InCallActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setShowWhenLocked(true);
         setContentView(R.layout.activity_in_call);
-        getWindow().addFlags(WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD | WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED | WindowManager.LayoutParams.FLAG_TURN_SCREEN_ON);
-//        PowerManager powerManager = (PowerManager) this.getSystemService(Context.POWER_SERVICE);
-//        PowerManager.WakeLock wakeLock = powerManager.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK | PowerManager.ACQUIRE_CAUSES_WAKEUP, TAG);
-//        wakeLock.acquire();
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD
+                | WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED
+                | WindowManager.LayoutParams.FLAG_TURN_SCREEN_ON);
     }
 }

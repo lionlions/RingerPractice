@@ -6,4 +6,41 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/phone_ringtone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="播放預設來電鈴聲"
+        app:layout_constraintBottom_toTopOf="@+id/alarm_ringtone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:id="@+id/alarm_ringtone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="播放預設鬧鐘鈴聲"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:id="@+id/notification_ringtone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="播放預設通知鈴聲"
+        app:layout_constraintTop_toBottomOf="@+id/alarm_ringtone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        app:layout_constraintTop_toBottomOf="@+id/notification_ringtone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
